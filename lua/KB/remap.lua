@@ -21,6 +21,8 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("n", "q", "<nop>")
 vim.keymap.set("n", "<c-f>", "<cmd>silent !tmux neww tmux-sessionizer<cr>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+vim.keymap.set("n", "<leader>fml", "<cmd>CellularAutomaton make_it_rain<CR>")
+vim.keymap.set("n", "<leader>ts", "<cmd>TSPlaygroundToggle<CR>")
 
 vim.keymap.set("n", "<c-k>", "<cmd>cnext<cr>zz")
 vim.keymap.set("n", "<c-j>", "<cmd>cprev<cr>zz")
@@ -29,6 +31,7 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<cr>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<c-r><c-w>\>/<c-r><c-w>/gi<left><left><left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<cr>", { silent = true })
+vim.keymap.set("n", "<leader>zzz", "<cmd>ZenMode<cr>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
