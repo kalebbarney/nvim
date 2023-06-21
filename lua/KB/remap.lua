@@ -17,7 +17,9 @@ vim.keymap.set("n", "<C-v>", [["+p]])
 vim.keymap.set("n", "<C-V>", [["+P]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
-
+vim.keymap.set("n", "<leader>cod", "<cmd>TSContextDisable<cr>")
+vim.keymap.set("n", "<leader>coe", "<cmd>TSContextEnable<cr>")
+vim.keymap.set("n", "<leader>con", "<cmd>TSContextToggle<cr>")
 vim.keymap.set("n", "q", "<nop>")
 vim.keymap.set("n", "<c-f>", "<cmd>silent !tmux neww tmux-sessionizer<cr>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
