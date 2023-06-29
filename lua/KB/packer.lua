@@ -12,11 +12,7 @@ return require("packer").startup(function(use)
         config = function()
             vim.cmd([[colorscheme gruvbox]])
 
-            require("gruvbox").setup({
-                overrides = {
-                    SignColumn = { bg = "#ff9900" }
-                }
-            })
+            require("gruvbox").setup()
         end
     })
 
@@ -58,6 +54,14 @@ return require("packer").startup(function(use)
         },
     })
 
+    use({
+        "Dhanus3133/LeetBuddy.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-telescope/telescope.nvim",
+        },
+    })
+
     use("folke/zen-mode.nvim")
     use("nvim-tree/nvim_web_devicons")
     use("eandrju/cellular-automaton.nvim")
@@ -70,6 +74,7 @@ return require("packer").startup(function(use)
     use("theprimeagen/harpoon")
     use("mbbill/undotree")
     use("tpope/vim-fugitive")
+    use("ianding1/leetcode.vim")
 
     use {
         "VonHeikemen/lsp-zero.nvim",

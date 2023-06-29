@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["LeetBuddy.nvim"] = {
+    loaded = true,
+    path = "/home/kb/.local/share/nvim/site/pack/packer/start/LeetBuddy.nvim",
+    url = "https://github.com/Dhanus3133/LeetBuddy.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/kb/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -115,7 +120,7 @@ _G.packer_plugins = {
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   gruvbox = {
-    config = { "\27LJ\2\nž\1\0\0\5\0\v\0\0156\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\a\0005\4\6\0=\4\b\3=\3\n\2B\0\2\1K\0\1\0\14overrides\1\0\0\15SignColumn\1\0\0\1\0\1\abg\f#ff9900\nsetup\fgruvbox\frequire\24colorscheme gruvbox\bcmd\bvim\0" },
+    config = { "\27LJ\2\na\0\0\3\0\6\0\n6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0B\0\1\1K\0\1\0\nsetup\fgruvbox\frequire\24colorscheme gruvbox\bcmd\bvim\0" },
     loaded = true,
     path = "/home/kb/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
@@ -124,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kb/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
+  },
+  ["leetcode.vim"] = {
+    loaded = true,
+    path = "/home/kb/.local/share/nvim/site/pack/packer/start/leetcode.vim",
+    url = "https://github.com/ianding1/leetcode.vim"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -244,14 +254,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: gruvbox
+time([[Config for gruvbox]], true)
+try_loadstring("\27LJ\2\na\0\0\3\0\6\0\n6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0B\0\1\1K\0\1\0\nsetup\fgruvbox\frequire\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
+time([[Config for gruvbox]], false)
 -- Config for: nvim-regexplainer
 time([[Config for nvim-regexplainer]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17regexplainer\frequire\0", "config", "nvim-regexplainer")
 time([[Config for nvim-regexplainer]], false)
--- Config for: gruvbox
-time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\nž\1\0\0\5\0\v\0\0156\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\3\0'\2\4\0B\0\2\0029\0\5\0005\2\t\0005\3\a\0005\4\6\0=\4\b\3=\3\n\2B\0\2\1K\0\1\0\14overrides\1\0\0\15SignColumn\1\0\0\1\0\1\abg\f#ff9900\nsetup\fgruvbox\frequire\24colorscheme gruvbox\bcmd\bvim\0", "config", "gruvbox")
-time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
