@@ -1,4 +1,5 @@
 require("leetbuddy").setup({
+    domain = "com",
     language = "ts"
 })
 

@@ -34,6 +34,9 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<cr>zz")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<c-r><c-w>\>/<c-r><c-w>/gi<left><left><left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<cr>", { silent = true })
 vim.keymap.set("n", "<leader>zzz", "<cmd>ZenMode<cr>")
+vim.keymap.set("n", "<c-s>", "<cmd>w<cr>")
+
+vim.keymap.set("n", "<leader>tm", "<cmd>ToggleTerm<CR>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")

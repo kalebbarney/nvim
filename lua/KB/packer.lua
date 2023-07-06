@@ -62,6 +62,10 @@ return require("packer").startup(function(use)
         },
     })
 
+    use({"akinsho/toggleterm.nvim", tag="*", config = function()
+        require("toggleterm").setup()
+    end})
+
     use("folke/zen-mode.nvim")
     use("nvim-tree/nvim_web_devicons")
     use("eandrju/cellular-automaton.nvim")
